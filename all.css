@@ -1,0 +1,165 @@
+a{
+    text-decoration: none;
+    color: azure;
+    
+}
+
+
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url(https://drive.google.com/uc?export=view&id=1kj-qDTGLRmdPK7dmAtE4FCo64HrV8lR7);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+header {
+    display: flex;
+   align-items: center;  /* logo置中 */
+    background-image: url('https://drive.google.com/uc?export=view&id=1mlgazkMtaVOaEBMhscVMvGKIe8rQcl_m');
+    background-size: 100% 100%;
+    background-repeat: no-repeat; /* 不重複出現*/
+    height: 240px;
+    width: 1902px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+  
+  .logo {
+    display: flex;
+    margin-left: 30px;
+    width: 20%;
+  }
+  
+  .logo h1 {
+    font-size: 50px;
+    text-shadow: 3px 3px 1px #1f3864;
+    margin: 0;
+    position: absolute;
+    left: 300px;
+    top: 60px;
+  }
+  .logo h3 {
+    font-size: 30px;
+    text-shadow: 3px 3px 1px #1f3864;
+    margin: 0;
+    position: absolute;
+    top: 130px;
+    left: 300px;
+  }
+  header nav ul {
+    display: flex;
+    list-style: none;
+    margin-right: 30px;/*間距*/
+    width: 900px;
+  }
+  
+  header nav li {
+    margin-left: 30px;/*間距*/
+    text-shadow: 3px 3px 1px #1f3864;
+  }
+  
+  header nav {
+    position: absolute;
+    top: 150px;
+    left: 1000px;
+    width: 80%;
+    font-size: 30px;
+    width: 900px;
+  }
+  header a:hover{
+    font-size: 40px;
+    color: azure;
+  }
+
+  footer {
+    background-image: url('https://drive.google.com/uc?export=view&id=1y60JGHLiOQTCRClGmnSNWjQ4pN6g0yFJ');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 1902px;
+    height: 395px;
+    flex: 1;
+    position: relative;
+    bottom: -1300px;
+    z-index: 2;
+  }
+  
+  
+  .fb {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    position: relative;
+    left: 100px;
+    bottom: -120px;
+  }
+  .fb:hover{
+    height: 70px;
+    width: 70px;
+  }
+  .taiwan {
+    display: flex;
+    height: 52px;
+    width: 126px;
+    position: relative;
+    left: 150px;
+    bottom: -120px;
+  }
+  .taiwan:hover{
+    height: 62px;
+    width: 136px;
+  }
+  .information {
+    font-size: 20px;
+    margin: 0;
+    position: relative;
+    bottom: -140px;
+    left: 80px;
+    width: 20%;
+  }
+  .copy 
+   {
+    font-size: 20px;
+    margin: 0;
+    position: relative;
+    bottom: -170px;
+    left: -80px;
+  }
+  footer nav ul {
+    display: flex;
+    list-style: none;
+    margin-right: 30px;/*間距*/
+  }
+  
+  footer nav li {
+     margin-left: 60px; /*間距*/
+  }
+  
+  footer nav {
+    position: relative;
+    bottom: -140px;
+    left: 180px;
+    font-size: 25px;
+    width: 60%;
+  }
+  .more{
+    width: 20%;
+  }
+ footer a:hover{
+    font-size: 35px;
+    color: azure;
+ }
+
+
+
+

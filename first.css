@@ -1,0 +1,174 @@
+a :hover{
+    text-shadow: 3px 3px 1px #1f3864;
+}
+*{
+    color: azure;
+    margin: 0;
+    padding: 0;
+} 
+.t h1{
+    font-size: 60px;
+    text-shadow: 3px 3px 1px #1f3864;
+    width: 400px;
+    position: relative;
+    left: 500px;
+}
+.t h3{
+    font-size: 30px;
+    text-shadow: 3px 3px 1px #1f3864;
+    width: 400px;
+    position: relative;
+    left: 500px;
+}
+.t a{
+    position: relative;
+    left: 500px;
+}
+.t a :hover{
+    position: relative;
+    left: 20px;  
+}
+.t{
+    position: absolute;
+    top: -500px;
+    width: 400px;
+    text-align: left;
+    animation-name: slide-t;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+@keyframes slide-t{
+    from{opacity: 0;left: 400px;}
+    to{opacity: 1;left: 500px;}
+}
+
+#carouselExampleCaptions.carousel.slide{
+    position: relative;
+    top: 240px;
+}
+.carousel-inner{
+    position: relative;
+    top: -40px;
+    width: 1902px;
+    height: 600px;
+}
+.carousel-inner img{
+    width: 1902px;
+    height: 600px;
+}
+.carousel-indicators{
+    position: relative;
+    top: 500px;
+}
+.history{
+    position: relative;
+    top: 500px;
+}
+.history-t{
+    position: absolute;
+    height: 791px;
+    width: 1902px;
+    opacity: 0;
+}
+.history-t:hover{
+    /* position: relative; */
+    animation-name: history-t;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+@keyframes history-t{
+    from{opacity: 0;left: 100px;}
+    to{opacity: 1;left: 0px;}
+}
+.history-t h1{
+    position: relative;
+    top: 100px;
+    left: 950px;
+    font-size: 80px;
+    width: 500px;
+}
+.history-t h3{
+    position: relative;
+    top: 150px;
+    left: 950px;
+    font-size: 40px;
+    width: 500px;
+}
+.history-t a {
+    position: relative;
+    top: 150px;
+    left: 950px;
+    font-size: 20px;
+}
+.history-t a :hover{
+    position: relative;
+    left: -10px;
+}
+.history img{
+    width: 1700px;
+    height: 791px;
+}
+.towerman{
+    position: relative;
+    top: 800px;
+    left: 322px;
+    width: 1582px;
+    height: 800px;
+}
+.towerman img{
+    position: relative;
+    top: 0px;
+    left: 70px;
+    height: 800px;
+    z-index: 1;
+}
+.towerman-t{
+    position: absolute;
+    left: -320px;
+    opacity: 0;
+    height: 838px;
+    width: 1902px;
+    z-index: 3;
+}
+.towerman-t:hover{
+    /* position: relative; */
+    animation-name: towerman-t;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+@keyframes towerman-t{
+    from{opacity: 0;left: -400px;}
+    to{opacity: 1;left: -300px;}
+}
+
+.towerman-t h1{
+    font-size: 80px;
+    position: relative;
+    top: 150px;
+    width: 500px;
+    left: 550px;
+    z-index: 2;
+}
+.towerman-t h3{
+    font-size: 40px;
+    position: relative;
+    top: 150px;
+    left: 550px;
+    width: 500px;
+    z-index: 2;
+}
+.towerman-t a{
+    font-size: 20px;
+    position: relative;
+    top: 200px;
+    left: 550px;
+    z-index: 2;
+}
+.towerman-t a:hover{
+    position: relative;
+    left: 560px;
+    color: azure;
+}

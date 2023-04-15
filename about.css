@@ -1,0 +1,557 @@
+header,main,footer{
+    color: azure;
+    margin: 0;
+    padding: 0;
+}
+footer{
+  position: relative;
+  bottom: -2000px;
+}
+.tittle-o{
+  position: absolute;
+  top: 300px;
+  width: 1902px;
+  height: 130px;
+  perspective: 1000px;
+  text-align: center;
+}
+.title-i {
+    letter-spacing: 5px;
+    text-align: center;
+    position: relative;
+    left: 500px;
+    width: 1050px;
+    color:red;
+    animation-name: title;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    transform: translateZ(-50px) rotateY(30deg);
+  }
+@keyframes title{
+    0%{color: #f08080;font-size: 70px; transform: translateZ(-50px) rotateY(0deg);text-shadow:3px 3px 5px  #f08080;}
+    10%{color: #cd5c5c;text-shadow:3px 3px 5px  #cd5c5c;}
+    20%{color:#a52a2a ;text-shadow:3px 3px 5px  #a52a2a;}
+    30%{color: #b22222;text-shadow:3px 3px 5px  #b22222;}
+    40%{color: #800000;text-shadow:3px 3px 5px  #800000;}
+    50%{color: #8b0000;font-size: 50px;text-shadow:3px 3px 5px  #8b0000;}
+    60%{color: #e60000;text-shadow:3px 3px 5px  #e60000;}
+    70%{color: #f00;text-shadow:3px 3px 5px  #f00;}
+    80%{color: #ff4d40;text-shadow:3px 3px 5px  #ff4d40;}
+    90%{color: #fa8072;text-shadow:3px 3px 5px  #fa8072;;}
+    100%{color: #ff2400;font-size: 100px;transform: translateZ(-50px) rotateY(360deg);text-shadow:3px 3px 5px  #ff2400;}
+}
+
+
+
+
+.north{
+  color: azure;
+  position: relative;
+  top: 500px;
+  left: 15px;
+  width: 1872px;
+  height: 634px;
+
+  background-color: #272727;
+  box-shadow: 
+    0px 0px 0px 5px #000000, 
+    0px 0px 0px 10px #3c3c3c, 
+    0px 0px 0px 15px #4f4f4f;
+}
+.n-img1{
+  position: relative;
+  width: 634px;
+}
+.north h1{
+  width: 1050px;
+  position: relative;
+  top: -400px;
+  left: 700px;
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-shadow: 3px 3px 5px azure;
+  text-align: center;
+}
+.north:hover h1{
+  top: -550px;
+  animation-name: n-h1;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+}
+@keyframes n-h1 {
+  0%{top: -400px;}
+  100%{top: -550px;}
+}
+.north h3{
+  width: 1250px;
+  opacity: 0;
+  position: relative;
+  top: -550px;
+  left: 620px;
+  font-size: 50px;
+  font-weight: 500;
+  letter-spacing: 8px;
+  text-shadow: 3px 3px 5px azure;
+  text-align: center;
+  transition: opacity 1s ease-in-out, font-size 1s ease ; 
+}
+ .north:hover h3{
+  opacity: 1;
+  font-size: 80px;
+}
+.red-eye{
+  position: absolute;
+   top: 60px;
+   left: -40px;
+  width: 50%;
+  height: 50%;
+  opacity: 0;
+}
+.north:hover .red-eye{
+  opacity: 1;
+  animation-name: red-eye;
+  animation-duration: 0.88s;
+  animation-timing-function: ease;
+  animation-iteration-count: 4;
+  animation-direction: alternate-reverse;
+}
+@keyframes red-eye{
+ 3.41%{
+  opacity: 1;
+ }
+ 14.77%{
+  opacity: 0;
+ }
+ 20.45%{
+  opacity: 1;
+ }
+ 37.5%{
+  opacity: 0;
+ }
+ 46.59%{
+  opacity: 1;
+ }
+ 67.05%{
+  opacity: 0;
+ }
+ 72.73%{
+  opacity: 1;
+ }
+ 86.36%{
+  opacity: 0;
+ }
+ 89.77%{
+  opacity: 1;
+ }
+ 93.18%{
+  opacity: 0;
+ }
+ 96.58%{
+  opacity: 1;
+ }
+ 100%{
+  opacity: 0;
+ }
+}
+.north p{
+  width: 600px;
+  font-size: 100px;
+  font-weight: 1000;
+  color: yellow;
+  position: absolute;
+  top: 0px;
+  left: -30px;
+  transform: rotate(-30deg);
+  opacity: 0;
+}
+.north:hover p{
+  opacity: 1;
+  animation-name: n-word;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+}
+@keyframes n-word{
+  0%{
+    opacity: 0;
+    transform: rotate(0deg);
+    top: 100px;
+  }
+  100%{
+    opacity: 1;
+    transform: rotate(-30deg);
+    top: 0px;
+  }
+}
+
+
+
+
+.west{
+  position: relative;
+  top: 800px;
+  height: 642px;
+  width: 1872px;
+  background-color: #e1e100;
+  box-shadow: 
+    0px 0px 0px 5px #c4c400, 
+    0px 0px 0px 10px #f9f900, 
+    0px 0px 0px 15px azure;
+}
+.west img{
+  width: 845px;
+  height: 642px;
+  position: absolute;
+  left : 1030px;
+  top: 0px;
+}
+.west h1{
+  position: relative;
+  top: 250px;
+  left: -400px;
+  font-size: 90px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-shadow: 3px 3px 5px azure;
+  text-align: center;
+}
+.west:hover h1{
+  top: 50px;
+  animation-name: w-h1;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+}
+@keyframes w-h1 {
+  0%{top: 250px;}
+  100%{top: 50px;}
+}
+.west h3{
+  opacity: 0;
+  width: 900px;
+  position: relative;
+  top: 50px;
+  left: 100px;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 8px;
+  text-shadow: 3px 3px 5px azure;
+  text-align: center;
+  transition: opacity 1s ease-in-out, font-size 1s ease ;
+}
+.west:hover h3{
+  opacity: 1;
+  font-size: 70px;
+}
+
+#goldchain{
+  opacity: 0;
+  position: absolute;
+  top: 450px;
+  left: 1300px;
+  height: 80%;
+  width: 20%;
+}
+.west:hover #goldchain{
+  opacity: 1;
+  animation-name: goldchain;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+}
+@keyframes goldchain{
+  0%{
+    opacity: 0;
+    transform: rotate(-200deg);
+    position: absolute;
+    top: 650px;
+    left: 1100px;
+  }
+  100%{
+    opacity: 1;
+    transform: rotate(0deg);
+    position:absolute;
+    top: 450px;
+    left: 1300px;
+  }
+}
+
+#smoke{
+  opacity: 0;
+  position: absolute;
+  top: 380px;
+  left: 1050px;
+  height: 20%;
+  width: 20%;
+}
+.west:hover #smoke{
+  opacity: 1;
+  animation-name: smoke;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+}
+@keyframes smoke{
+  0%{
+    opacity: 0;
+    transform: rotate(200deg);
+    position: absolute;
+    top: 180px;
+    left: 850px;
+  }
+  100%{
+    opacity: 1;
+    transform: rotate(0deg);
+    position:absolute;
+    top: 380px;
+    left: 1050px;
+  }
+}
+
+#glasses{
+  opacity: 0;
+  position: absolute;
+  top: 230px;
+  left: 1250px;
+  height: 20%;
+  width: 30%;
+}
+.west:hover #glasses{
+  opacity: 1;
+  animation-name: glasses;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+}
+@keyframes glasses{
+  0%{
+    opacity: 0;
+    transform: rotate(100deg);
+    position: absolute;
+    top: 30px;
+    left: 1350px;
+  }
+  100%{
+    opacity: 1;
+    transform: rotate(0deg);
+    position:absolute;
+    top: 230px;
+    left: 1250px;
+  }
+}
+
+
+.south{
+  height: 642px;
+  width: 1872px;
+  position: relative;
+  top: 1200px;
+  background-color: #f75000;
+  box-shadow: 
+    0px 0px 0px 5px #d94600, 
+    0px 0px 0px 10px #ff5809, 
+    0px 0px 0px 15px #ff8040;
+}
+
+.south img{
+  position: relative;
+  width: 634px;
+  height: 642px;
+  opacity: 1;
+  transition: opacity 1s ease-in-out ; 
+}
+.south:hover img{
+  opacity: 0;
+}
+.south h1{
+  width: 1150px;
+  position: relative;
+  top: -350px;
+  left: 680px;
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-shadow: 3px 3px 5px azure;
+  text-align: center;
+}
+.south:hover h1{
+  top: -550px;
+  animation-name: s-h1;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+}
+@keyframes s-h1 {
+  0%{top: -350px;}
+  100%{top: -550px;}
+}
+.south h3{
+  width: 1250px;
+  opacity: 0;
+  position: relative;
+  top: -550px;
+  left: 620px;
+  font-size: 50px;
+  font-weight: 500;
+  letter-spacing: 8px;
+  text-shadow: 3px 3px 5px azure;
+  text-align: center;
+  transition: opacity 1s ease-in-out, font-size 1s ease ; 
+}
+.south:hover h3{
+  opacity: 1;
+  font-size: 80px;
+}
+#turtle{
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  width: 634px;
+  height: 642px;
+  transform: scale(0);
+}
+.south:hover #turtle{
+  opacity: 1;
+  animation-name: turtle;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  transform: rotateY(0deg);
+}
+@keyframes turtle {
+  0% {
+    opacity: 0;
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(360deg);
+  }
+}
+
+.east{
+  height: 642px;
+  width: 1872px;
+  position: relative;
+  top: 1500px;
+  background-color: #82d900;
+  box-shadow: 
+    0px 0px 0px 5px #73bf00, 
+    0px 0px 0px 10px #8cea00, 
+    0px 0px 0px 15px #9aff02;
+}
+.east h1{
+  position: relative;
+  top: 250px;
+  left: -200px;
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-shadow: 3px 3px 5px azure;
+  text-align: center;
+}
+.east:hover h1{
+  top: 50px;
+  animation-name: e-h1;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+}
+@keyframes e-h1 {
+  0%{top: 250px;}
+  100%{top: 50px;}
+}
+.east h3{
+  opacity: 0;
+  position: relative;
+  top: 50px;
+  left: -200px;
+  font-size: 50px;
+  font-weight: 500;
+  letter-spacing: 8px;
+  text-shadow: 3px 3px 5px azure;
+  text-align: center;
+  transition: opacity 1s ease-in-out, font-size 1s ease ;
+}
+.east:hover h3{
+  opacity: 1;
+  font-size: 80px;
+}
+.east video{
+  height: 643px;
+  position: absolute;
+  left: 1510px;
+  top: 0px;
+  transform: scale(1);
+  transition: transform 1s ease-out;
+}
+.east:hover video{
+  transform: scale(0);
+}
+.east img{
+  height: 643px;
+  width: 600px;
+  position: absolute;
+  left: 1280px;
+  top: 0px;
+  transform: scale(0);
+  transition: transform 1s ease-out;
+}
+.east:hover img{
+  transform: scale(1);
+}
+.oat{
+  height: 642px;
+  width: 1500px;
+  position: relative;
+  top: 1800px;
+  left: 200px;
+}
+.content{
+  display: none;
+  position: absolute;
+  z-index: 2;
+  height: 642px;
+  width: 1500px;
+  background-color: #ff359a;
+  box-shadow: 
+    0px 0px 0px 5px #ff0080, 
+    0px 0px 0px 10px #ff60af, 
+    0px 0px 0px 15px #ff79bc;
+}
+iframe{
+  height: 642px;
+  width: 1500px;
+  }
+button{
+  position: relative;
+  top: -50px;
+  width: 1500px;
+  height: 100px;
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-shadow: 3px 3px 5px azure;
+  border: azure;
+  text-align: center;
+  background-color: #ff359a;
+  box-shadow: 
+    0px 0px 0px 5px #ff0080, 
+    0px 0px 0px 10px #ff60af, 
+    0px 0px 0px 15px #ff79bc;
+}
+.laugh{
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  height: 642px;
+  width: 1500px;
+  z-index: 1;
+}
