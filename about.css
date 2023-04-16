@@ -45,7 +45,6 @@ footer{
 
 
 
-
 .north{
   color: azure;
   position: relative;
@@ -554,4 +553,9 @@ button{
   height: 642px;
   width: 1500px;
   z-index: 1;
-}
+  box-shadow: 
+  0px 0px 0px 5px #ff0080, 
+  0px 0px 0px 10px #ff60af, 
+  0px 0px 0px 15px #ff79bc;
+
+} 
