@@ -8,7 +8,9 @@ a{
 html {
   height: 100%;
 }
-
+main,body{
+  width: 1902px;
+}
 body {
   background-image: url(https://drive.google.com/uc?export=view&id=1kj-qDTGLRmdPK7dmAtE4FCo64HrV8lR7);
   background-repeat: no-repeat;
