@@ -69,19 +69,8 @@ a :hover{
     position: absolute;
     height: 791px;
     width: 1902px;
-    opacity: 0;
-}
-.history-t:hover{
-    /* position: relative; */
-    animation-name: history-t;
-    animation-duration: 2s;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards;
-}
-@keyframes history-t{
-    from{opacity: 0;left: 100px;}
-    to{opacity: 1;left: 0px;}
-}
+    }
+
 .history-t h1{
     position: relative;
     top: 100px;
@@ -127,22 +116,11 @@ a :hover{
 .towerman-t{
     position: absolute;
     left: -320px;
-    opacity: 0;
     height: 838px;
     width: 1902px;
     z-index: 3;
 }
-.towerman-t:hover{
-    /* position: relative; */
-    animation-name: towerman-t;
-    animation-duration: 2s;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards;
-}
-@keyframes towerman-t{
-    from{opacity: 0;left: -400px;}
-    to{opacity: 1;left: -300px;}
-}
+
 
 .towerman-t h1{
     font-size: 80px;
