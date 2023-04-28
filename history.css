@@ -1,0 +1,75 @@
+header,footer,main{
+    color: azure;
+}
+main{
+    position: relative;
+    top: 240px;
+    width: 1902px;
+}
+main h1{
+    text-align: center;
+    font-size: 60px;
+    width: 1902px;
+}
+main p{
+    font-size: 40px;
+    width: 1600px;
+    position: relative;
+    left: 151px;
+}
+hr{
+    border: 2px dashed azure;
+    position: relative;
+    top: 80px;
+}
+.Introduction{
+    position: relative;
+    top: 160px;
+    width: 1902px;
+}
+.china{
+    position: relative;
+    top: 320px;
+    width: 1902px;
+}
+.japan{
+    position: relative;
+    top: 480px;
+    width: 1902px;
+}
+.after{
+    position: relative;
+    top: 640px;
+    width: 1902px;
+}
+.china-img{ 
+    position: relative;
+    left: 446.5px;
+}
+.japan-img{
+    position: relative;
+    left: 446.5px;
+}
+.carousel{
+    position: relative;
+    top: 800px;
+    left: 446.5px;
+    width: 1004px;
+}
+.carousel img{
+    position: relative;
+    width: 1004px;
+    height: 606px;
+}
+.history-map{
+    position: relative;
+    left: 446.5px;
+    width: 1004px;
+    height: 606px;
+}
+.bottom-t{
+    position: relative;
+    top: 800px;
+    font-size: 20px;
+    text-align: center;
+}
