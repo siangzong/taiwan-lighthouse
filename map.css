@@ -1,0 +1,12 @@
+*{color: azure;}
+iframe{
+    width: 1700px;
+    height: 1425px;
+    position: relative;
+    left: 100px;
+    top: 500px;
+}
+footer{
+    position: relative;
+    bottom: -600px;
+}
