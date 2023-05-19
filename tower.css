@@ -1,20 +1,54 @@
-.navbar {
+header, main , footer{
+  color: azure;
+}
+ul.nav-pills {
+  top: 240px;
+  left: 30px;
   position: fixed;
-  top: 240px; /* 固定在距離視窗頂部 240px 的位置 */
+}
+div.col-sm-9 div {
+  height: 250px;
+  font-size: 28px;
+}
+.row{
+  width: 1902px;
+}
+.container{width: 1902px;}
+.nav{
+  background-color: #337ab7
+}
+.col-sm-9{
+  position: relative;
+  top: 240px;
+  left: -200px;
+}
+h4{
+  font-size: 40px;
+}
+h5{
+  font-size: 30px;
+}
+h5:hover{
+  position: relative;
+  left: 10px;
+  color: azure;
+}
+.item0 p{
+  font-size: 20px;
+  height: 300px;
+  width: 1100px;
+}
+.item0 img{
   width: 200px;
-  z-index: 100;
+  height: 200px;
 }
-
-/* 在固定導覽列後，為了避免內容突然跳動，可以在 body 上增加 padding-top */
-body.navbar {
-  padding-top: 80px; /* 根據你的導覽列高度進行修改 */
+.item0{
+  display: flex;
+  margin: 70px 0px 70px 0px;
 }
-
-/* 非固定導覽列的樣式 */
-main {
-  /* 這裡假設你的導覽列高度是 80px */
-  height: 80px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+footer{
+  bottom: -400px;
 }
-
+header a,footer a ,main a{
+  text-decoration: none;
+}

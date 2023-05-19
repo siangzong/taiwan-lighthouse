@@ -2,11 +2,10 @@
 <html>
     <head>
         <title>真·AKA台灣㊣燈塔</title>
-        <meta charset="utf-8">  
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <link rel="stylesheet" href="all.css">
@@ -15,7 +14,7 @@
     </head>
     
         <header>
-            <div class="logo">
+            <div class="logo" id="logo">
                 <a href="index.html"> <img src="https://drive.google.com/uc?export=view&id=1W2lglihq9PtDbmOaS5zdwzj0dFNQdAmR" alt="LOGO"></a>
                     <h1>台灣燈塔</h1>
                     <h3>——屹立於海岸線的引路人——</h3>
@@ -24,7 +23,7 @@
               <ul>
                 <li><a href="about.html" target="_blank" >關於我們</a></li>
                 <li><a href="history.html" target="_blank" >燈塔歷史</a></li>
-                <li><a href="map.html" target="_blank">燈塔地圖</a></li>
+                <li><a href="map.html" target="_blank">燈塔地圖</a></li></li>
                 <li><a href="tower.html" target="_blank" >燈塔介紹</a></li>
                 <li><a href="tower-man.html"target="_blank">守塔人</a></li>
               </ul>
@@ -32,158 +31,368 @@
           </header>
            
         <main>
-            <nav id="navbar-example3" class="navbar navbar-light bg-light flex-column align-items-stretch p-3">
-                <nav class="nav nav-pills flex-column">
-                  <a class="nav-link" href="#item-1">北部的燈塔</a>
-                  <nav class="nav nav-pills flex-column">
-                    <a class="nav-link ms-3 my-1" href="#item-1-1">彭佳嶼燈塔</a>
-                    <a class="nav-link ms-3 my-1" href="#item-1-2">基隆島燈塔</a>
-                    <a class="nav-link ms-3 my-1" href="#item-1-3">基隆燈塔</a>
-                    <a class="nav-link ms-3 my-1" href="#item-1-4">球子山燈塔</a>
-                    <a class="nav-link ms-3 my-1" href="#item-1-5">淡水港燈塔</a>
-                    <a class="nav-link ms-3 my-1" href="#item-1-6">富貴角燈塔</a>
-                    <a class="nav-link ms-3 my-1" href="#item-1-7">野柳燈桿</a>
-                    <a class="nav-link ms-3 my-1" href="#item-1-8">鼻頭角燈塔</a>
-                    <a class="nav-link ms-3 my-1" href="#item-1-9">三貂角燈塔</a>
-                    <a class="nav-link ms-3 my-1" href="#item-1-10">白沙岬燈塔</a> 
+          <div data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+
+            <div class="container">
+              <div class="row">
+                <nav class="col-sm-3" id="myScrollspy">
+                  <ul class="nav nav-pills nav-stacked">
+                      <li class="active"><a href="#logo">TOP</a></li>
+                      <li class="dropdown ">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">北部的燈塔 <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a   href="#item-1-1">彭佳嶼燈塔</a></li>
+                        <li><a   href="#item-1-2">基隆島燈塔</a></li>
+                        <li><a   href="#item-1-3">基隆燈塔</a></li>
+                        <li><a   href="#item-1-4">球子山燈塔</a></li>
+                        <li><a   href="#item-1-5">淡水港燈塔</a></li>
+                        <li><a   href="#item-1-6">富貴角燈塔</a></li>
+                        <li><a   href="#item-1-7">野柳燈桿</a></li>
+                        <li><a   href="#item-1-8">鼻頭角燈塔</a></li>
+                        <li><a   href="#item-1-9">三貂角燈塔</a></li>
+                        <li><a   href="#item-1-10">白沙岬燈塔</a></li>               
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">中部的燈塔 <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a   href="#item-2-1">高美燈塔</a></li>
+                        <li><a   href="#item-2-2">台中港燈塔</a></li>
+                        <li><a   href="#item-2-3">芳苑燈塔</a></li>
+                        <li><a   href="#item-2-4">溫港堆燈塔</a></li>                     
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">南部的燈塔 <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a   href="#item-3-1">國聖港燈塔</a></li>
+                        <li><a   href="#item-3-2">安平燈塔</a></li>
+                        <li><a   href="#item-3-3">高雄燈塔</a></li>
+                        <li><a   href="#item-3-4">琉球嶼燈塔</a></li>
+                        <li><a   href="#item-3-5">鵝鑾鼻燈塔</a></li>                    
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">東部的燈塔 <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a   href="#item-4-1">蘇澳燈塔</a></li>
+                        <li><a   href="#item-4-2">奇萊鼻燈塔</a></li>
+                        <li><a   href="#item-4-3">花蓮港燈塔</a></li>
+                        <li><a   href="#item-4-4">綠島燈塔</a></li>
+                        <li><a   href="#item-4-5">蘭嶼燈塔</a></li>                     
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">離島的燈塔 <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a   href="#item-5-1">目斗嶼燈塔</a></li>
+                        <li><a   href="#item-5-2">漁翁島燈塔</a></li>
+                        <li><a   href="#item-5-3">花嶼燈塔</a></li>
+                        <li><a   href="#item-5-4">東吉嶼燈塔</a></li>
+                        <li><a   href="#item-5-5">查母嶼燈塔</a></li>
+                        <li><a   href="#item-5-6">七美嶼燈塔</a></li>
+                        <li><a href="#item-5-7">東引島燈塔</a></li>
+                        <li><a href="#item-5-8">東莒島燈塔</a></li>
+                        <li><a href="#item-5-9">烏坵嶼燈塔</a></li>
+                        <li><a href="#item-5-10">東椗島燈塔</a></li>
+                        <li><a href="#item-5-11">北椗島燈塔</a></li>                    
+                      </ul>
+                    </li>
+                  </ul>
                 </nav>
-                  <a class="nav-link" href="#item-2">中部的燈塔</a>
-                  <nav class="nav nav-pills flex-column">
-                    <a class="nav-link ms-3 my-1" href="#item-2-1">高美燈塔</a>
-                    <a class="nav-link ms-3 my-1" href="#item-2-2">台中港燈塔</a>
-                    <a class="nav-link ms-3 my-1" href="#item-2-3">芳苑燈塔</a>
-                    <a class="nav-link ms-3 my-1" href="#item-2-4">溫港堆燈塔</a>  
-                </nav>
-                  <a class="nav-link" href="#item-3">南部的燈塔</a>
-                  <nav class="nav nav-pills flex-column">
-                    <a class="nav-link ms-3 my-1" href="#item-3-1">國聖港燈塔</a>
-                    <a class="nav-link ms-3 my-1" href="#item-3-2">安平燈塔</a>
-                    <a class="nav-link ms-3 my-1" href="#item-3-3">高雄燈塔</a>
-                    <a class="nav-link ms-3 my-1" href="#item-3-4">琉球嶼燈塔</a>
-                    <a class="nav-link ms-3 my-1" href="#item-3-5">鵝鑾鼻燈塔</a>
-                  </nav>
-                  <a class="nav-link" href="#item-4">東部的燈塔</a>
-                  <nav class="nav nav-pills flex-column">
-                    <a class="nav-link ms-3 my-1" href="#item-4-1">蘇澳燈塔</a>
-                    <a class="nav-link ms-3 my-1" href="#item-4-2">奇萊鼻燈塔</a>
-                    <a class="nav-link ms-3 my-1" href="#item-4-3">花蓮港燈塔</a>
-                    <a class="nav-link ms-3 my-1" href="#item-4-4">綠島燈塔</a>
-                    <a class="nav-link ms-3 my-1" href="#item-4-5">蘭嶼燈塔</a>
-                  </nav>
-                  <a class="nav-link" href="#item-5">離島的燈塔</a>
-                  <nav class="nav nav-pills flex-column">
-                    <a class="nav-link ms-3 my-1" href="#item-5-1">目斗嶼燈塔</a>
-                    <a class="nav-link ms-3 my-1" href="#item-5-2">漁翁島燈塔</a>
-                    <a class="nav-link ms-3 my-1" href="#item-5-3">花嶼燈塔</a>
-                    <a class="nav-link ms-3 my-1" href="#item-5-4">東吉嶼燈塔</a>
-                    <a class="nav-link ms-3 my-1" href="#item-5-5">查母嶼燈塔</a>
-                    <a class="nav-link ms-3 my-1" href="#item-5-6">七美嶼燈塔</a>
-                    <a class="nav-link ms-3 my-1" href="#item-5-7">東引島燈塔</a>
-                    <a class="nav-link ms-3 my-1" href="#item-5-8">東莒島燈塔</a>
-                    <a class="nav-link ms-3 my-1" href="#item-5-9">烏坵嶼燈塔</a>
-                    <a class="nav-link ms-3 my-1" href="#item-5-10">東椗島燈塔</a>
-                    <a class="nav-link ms-3 my-1" href="#item-5-11">北椗島燈塔</a>
-                  </nav>
-                </nav>
-               
-              </nav>
-              <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0">
-                <h4 id="item-1">北部的燈塔</h4>
-                <p>...</p>
-                <h5 id="item-1-1">彭佳嶼燈塔</h5>
-                <p>...</p>
-                <h5 id="item-1-2">基隆島燈塔</h5>
-                <p>...</p>
-                <h5 id="item-1-3">基隆燈塔</h5>
-                <p>...</p>
-                <h5 id="item-1-4">球子山燈塔</h5>
-                <p>...</p>
-                <h5 id="item-1-5">淡水港燈塔</h5>
-                <p>...</p>
-                <h5 id="item-1-6">富貴角燈塔</h5>
-                <p>...</p>
-                <h5 id="item-1-7">野柳燈桿</h5>
-                <p>...</p>
-                <h5 id="item-1-8">鼻頭角燈塔</h5>
-                <p>...</p>
-                <h5 id="item-1-9">三貂角燈塔</h5>
-                <p>...</p>
-                <h5 id="item-1-10">白沙岬燈塔</h5>
-                <p>...</p>
-
-
-
-                <h4 id="item-2">中部的燈塔</h4>
-                <p>...</p>
-                <h5 id="item-2-1">高美燈塔</h5>
-                <p>...</p>
-                <h5 id="item-2-2">台中港燈塔</h5>
-                <p>...</p>
-                <h5 id="item-2-3">芳苑燈塔</h5>
-                <p>...</p>
-                <h5 id="item-2-4">溫港堆燈塔</h5>
-                <p>...</p>
-
-
-
-
-                <h4 id="item-3">南部的燈塔</h4>
-                <p>...</p>
-                <h5 id="item-3-1">國聖港燈塔</h5>
-                <p>...</p>
-                <h5 id="item-3-2">安平燈塔</h5>
-                <p>...</p>
-                <h5 id="item-3-3">高雄燈塔</h5>
-                <p>...</p>
-                <h5 id="item-3-4">琉球嶼燈塔</h5>
-                <p>...</p>
-                <h5 id="item-3-5">鵝鑾鼻燈塔</h5>
-                <p>...</p>
-
-
-
-
-                <h4 id="item-4">東部的燈塔</h4>
-                <p>...</p>
-                <h5 id="item-4-1">蘇澳燈塔</h5>
-                <p>...</p>
-                <h5 id="item-4-2">奇萊鼻燈塔</h5>
-                <p>...</p>
-                <h5 id="item-4-3">花蓮港燈塔</h5>
-                <p>...</p>
-                <h5 id="item-4-4">綠島燈塔</h5>
-                <p>...</p>
-                <h5 id="item-4-5">蘭嶼燈塔</h5>
-                <p>...</p>
+                <div class="col-sm-9">
+                    <h4 id="item-1">北部的燈塔</h4>
+                    
+                    
+                    <a href="https://www.taiwan.net.tw/m1.aspx?sNo=0001105&id=A12-00200" target="_blank"><h5 id="item-1-1">彭佳嶼燈塔</h5></a><div class="item0">
+                    <p>動工於日治時期，1906年，總督府海事官三村三平、小關世男雄和技手尾原菊三會同登嶼，著手調查燈塔的適當建設位置，1906年正式始建，原本預定在1908年完工，但是因為製造廠方面延遲交貨與遭遇強烈東北季風，造成周圍海域海象不佳，所以無法安裝燈器等零件。1909年5月上旬，燈器等零件才送到彭佳嶼，並在該年7月完成後續興建工程，最後燈塔在9月20日正式啟用。在此同時，為了指引搬運材料的船隻而於1907年所設的臨時燈桿也予以拆除。
+                    二次大戰時，彭佳嶼屢遭盟軍轟炸。燈塔便因燈具受損而失去作用。戰後，燈塔由中華民國海關接收並於1946年6月19日修復，後來在1948至1949年期間，又將附近原本為四坡式木造鋪瓦屋頂的磚造辦公室及宿舍改建，而成為現在的磚牆水泥平頂建築，目前航港局有五名「燈塔守」駐守彭佳嶼。補給物資及人員更替均由運星艦每月2次運補供給，由於彭佳嶼目前仍為軍事管制區，且交通極為不便，故航港局尚未開放民眾參觀燈塔。</p>
+                    <img src="https://drive.google.com/uc?export=view&id=1wLlagmox0bFfq3AdK3przfne_n3yclDI" alt="" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></div>
                 
+                    <a href="https://www.taiwan.net.tw/m1.aspx?sNo=0001016&id=A12-00407" target="_blank"><h5 id="item-1-2">基隆島燈塔</h5></a><div class="item0">
+                    <p>中華民國政府1980年在基隆嶼山頂上建造基隆島燈塔。1980年11月1日興建完成開燈。1990年光力由3,500燭光增強至8,000燭光。1998年因全島無電力供應，改設太陽能發電，為台灣最早使用太陽能發電的燈塔。2006年加裝風力發電輔助。
+                    1992年基隆市政府為拓展地方觀光旅遊事業，決定將基隆嶼開發成休閒遊憩的據點。市政府及交通部觀光局在島上鋪設木棧道、登山圍欄、涼亭、碼頭等多項設施。由登山步道可抵達山頂上的基隆島燈塔，但因山頂稜線兩側為懸崖，且未設置護欄，所以起初並未開放給遊客參觀。</p>
+                    <img src="https://drive.google.com/uc?export=view&id=1FftfjZSNNiaDMQ6ZQoi8IxY4pqDdahh9" alt="" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></div>
+                    
+                    <a href="https://www.taiwan.net.tw/m1.aspx?sno=0001105&id=a12-00197" target="_blank"><h5 id="item-1-3">基隆燈塔</h5></a><div class="item0">
+                    <p>1895年日本接收台灣後，台灣總督府在基隆廳開始進行民政事務，並正式開始將基隆港建成現代化港口，此外為台澎航路和建造海底電纜、航路設備等著想，總督府因而成立臨時臺灣燈標建設部，在完成了富基角燈塔及鼻頭角燈塔工程後，陸軍省乃自行報請廢止臨時臺灣燈標建設部，而開始自行建造燈臺等多項設施。
+                    其中，基隆燈臺在經過海軍幕僚意見變更後，於1899年4月選址於基隆西岸岬角（萬人堆鼻）處起工，並在隔年2月24日竣工，同年4月1日點燈，根據1900年3月3日《臺灣總督府公文類纂》告示第18號中顯示，該燈塔工程由總督府技師大澤正業、工事主任技手田口敬太郎擔當，為台灣日治時期第一座完成的磚造燈塔，除了以具有燈光照引船隻安全進出基隆港之外，另外因應基隆之惡劣天氣引航則裝設霧砲，並有觀察基隆風向、溫度和氣候變化之測候所功能。</p>
+                    <img src="https://drive.google.com/uc?export=view&id=174GLMBxyxmvFpzQ8CNiQT44720oU7Dme" alt="" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></div>
+                    
+                    <a href="https://www.taiwan.net.tw/m1.aspx?sNo=0001105&id=A12-00199" target="_blank"><h5 id="item-1-4">球子山燈塔</h5></a><div class="item0">
+                    <p>是一座位於台灣基隆市球子山的燈塔，興建於1956年，並於1991年後暫停使用。該燈塔塔身主體原為白色，後以國防色（綠色）為主。該燈塔是第一座由中華民國自行設計施工的燈塔。2018年4月交通部航港局完成球子山燈塔修復，外觀漆回原本白色。</p>
+                    <img src="https://drive.google.com/uc?export=view&id=1j8TBcYOhBcYR2uA0Tv2R_avCRrzvJy6s" alt="" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></div>
+                    
+                    <a href="https://www.taiwan.net.tw/m1.aspx?sNo=0001016&id=A12-00195" target="_blank"><h5 id="item-1-5">淡水港燈塔</h5></a><div class="item0">
+                    <p>淡水港燈塔的興建，起因於天津條約簽訂後淡水港開放為通商口岸後，外商輪船進出頻仍，為改善導航設施與減少船難而特別建造。其前身創建於臺灣清治時期西元1796年，由當地居民募款建設，塔身用天然丸石砌造，高約四公尺，使用油燈，於日沒出時點滅燈火，稱為「望高樓」，為台灣島最古老的燈塔。西元1888年，由中國海關總稅務司另建的淡水港燈塔，為一座白色方形西式鐵塔，高15.8公尺，裝用六等煤油定光燈，光力一百燭。1926年改用電燈，1951年改用閃光燈，每三秒一閃，光力四千燭光，見距十一浬。1969年（民國58年）遷建為方形鋼架新塔。</p>
+                    <img src="https://drive.google.com/uc?export=view&id=1VVkHYR7P7qGT4EaYuBAFIvGUNX4GZBR1" alt="" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></div>
+                    
+                    <a href="https://www.taiwan.net.tw/m1.aspx?sNo=0001016&id=A12-00196" target="_blank"><h5 id="item-1-6">富貴角燈塔</h5></a><div class="item0">
+                    <p>起建於1896年，至1897年建造完竣。為台灣日治時期興建的第2座燈塔，係因為了建造臺灣與日本之間的海底電纜以及航路設備而興建， 建地乃向淡水居民林萬得收購，共31,750平方公尺，燈塔所有的建材皆自日本運來，鐵造塔身為東京田中鐵工場製作。最初塔身結構是八角形鐵造，高度30公尺，因當地多濃霧， 故漆上黑白相間的平行條紋， 原裝配二等三重芯煤油燈，白色定光，光力3,500支燭光，至1911年時，改用17,600支燭光的煤油白熱燈。1927年，改名「富貴角燈塔」迄今。1928年，再度改用白色頓光電燈，明5秒滅5秒，光力增加為19,000支燭光。
+                      第二次世界大戰期間遭美軍轟炸，燈器毀損， 塔體亦嚴重銹蝕。
+                      於1954年暫時使用鋼架塔代替， 燈塔部分土地遭軍方借用建造雷達站。1962年時改建為八角形混凝土塔，塔身漆上原初的條紋外觀。1973年增設無線電標桿一座。1981年電霧號霧笛一座，亦為首次在臺灣出現的航路標誌。</p>
+                    <img src="https://drive.google.com/uc?export=view&id=1JN4-Lsfk1dGYSSLWktzzZUjyIf55cj4c" alt="" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></div>
+                    
+                    <a href="https://www.taiwan.net.tw/m1.aspx?sNo=0001016&id=A12-00206" target="_blank"><h5 id="item-1-7">野柳燈桿</h5></a><div class="item0">
+                    <p>西元1967年建造的野柳燈杆，位於新北市萬里區東北角風景區內。
+                      該杆設計特殊，外型像蠟燭台造型，主要是為了配合野柳豐富的地理景觀，
+                      燭台造型的燈杆下還有可供遊客休憩的桌椅，甚為突出美觀，曾獲國際燈塔界之好評。
+                      野柳燈杆的設置，與附近海域暗礁危岩密佈有關，
+                      介於富貴角與基隆港燈塔照射半徑間的野柳燈杆，
+                      具有加強基隆港的導航功能，
+                      也是船隻夜間航行的重要航路標誌。</p>
+                    <img src="https://drive.google.com/uc?export=view&id=1lfarRhmv-mUFg5kr5Ih2SkYSuNk29vMP" alt="" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></div>
+                    
+                    <a href="https://www.taiwan.net.tw/m1.aspx?sno=0001091&id=a12-00201" target="_blank"><h5 id="item-1-8">鼻頭角燈塔</h5></a><div class="item0">
+                    <p>建於1896年，西元1897年建造完成開始點火。1906年由於塔基岩盤出現裂痕，將原塔遷移至30公尺外的現址。舊塔原為日治時代興建之六角形鐵塔，二次大戰遭美軍攻擊嚴重損毀，1971年改築為鋼筋混凝土之白色圓塔
+                    1971年再以重建。</p>
+                    <img src="https://drive.google.com/uc?export=view&id=1q5DJK71JNb1LuyR2Kws3SSfQZ8X2GmbI" alt="" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></div>
+                    
+                    <a href="https://www.taiwan.net.tw/m1.aspx?sNo=0001091&id=A12-00202" target="_blank"><h5 id="item-1-9">三貂角燈塔</h5></a><div class="item0">
+                    <p>公元1935年燈塔完工。最早燈器為三等煤油白熱燈，1942年改裝為三等旋轉透鏡電燈。西元1929年及1931年，日本船舶撫順丸（Bujun Maru）及華南丸（Kwanan Maru），先後於三貂角附近海域遭遇海難沉沒，台灣總督府因此於此地籌建此燈塔。二戰時遭盟軍戰機炸射毀損，1946年修復運作。</p>
+                    <img src="https://drive.google.com/uc?export=view&id=1jX6jYUrahLvQJrfbKHplcoX2iss60Go4" alt="" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></div>
+                    
+                    <a href="https://www.taiwan.net.tw/m1.aspx?sno=0001107&id=a12-00194" target="_blank"><h5 id="item-1-10">白沙岬燈塔</h5></a><div class="item0">
+                    <p>一座位於臺灣桃園市觀音區觀音里新坡下的燈塔。於1898年開始興建，歷時三年完工，1901年1月啟用發光。塔身為雙層磚造圓塔，太平洋戰爭時曾遭同盟國所屬的戰鬥機撞毀，戰後修復後塔高減至27.7公尺。2002年由桃園縣政府文化局（今桃園市政府文化局）指定為縣定古蹟，2014年12月改為市定古蹟。2013年9月起開放一般大眾參觀。</p>
+                    <img src="https://drive.google.com/uc?export=view&id=1idh1WZhE51fmW-n1HxGqTbXUZGQn4Cm3" alt="" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></div>
+
+
+                    <h4 id="item-2">中部的燈塔</h4>
+                    
+                    
+                    <a href="https://www.taiwan.net.tw/m1.aspx?sNo=0001112&id=A12-00216" target="_blank"><h5 id="item-2-1">高美燈塔</h5></a><div class="item0">
+                    <p>塔身建築與芳苑燈塔相似，為八角形的鋼筋混凝土之建築物，是臺灣唯一外觀呈紅、白相間且平行條紋的燈塔，塔高：34.4公尺。但於1982年停止運作，並將燈器拆除移至臺中港燈塔使用。</p>
+                    <img src="https://drive.google.com/uc?export=view&id=12XCQiRVw2wF8aFGmSmTSaces1__i2_Gk" alt="" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></div>
+                  
+                    <a href="https://www.taiwan.net.tw/m1.aspx?sNo=0001016&id=A12-00193" target="_blank"><h5 id="item-2-2">台中港燈塔</h5></a><div class="item0">
+                    <p>臺中港燈塔建於1983年，建在全天運作的遠東倉儲頂樓，與倉庫廠房比鄰而居，外觀為一白色混凝土建築。使用的燈器則是1973年來自高美燈塔上的燈具，每30秒連閃白光3次、光力1,800,000燭光、光程26.8浬</p>
+                    <img src="https://drive.google.com/uc?export=view&id=1dyLuffGMZ1pTjZFsAeKJBRw_KGOMAy6y" alt="" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></div>
+
+                    <a href="https://www.taiwan.net.tw/m1.aspx?sno=0001113&id=a12-00192" target="_blank"><h5 id="item-2-3">芳苑燈塔</h5></a><div class="item0">
+                    <p>亦稱王功燈塔，位處於彰化縣芳苑鄉王功漁港、地址為彰化縣芳苑鄉王功村漁港七路146號。為台灣最年輕的燈塔，建於西元1983年。</p>
+                    <img src="https://drive.google.com/uc?export=view&id=1_ee7qie07dOvbFyNiUDuh4H0VAAykXwO" alt="" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></div>
+                   
+                    <a href="https://www.taiwan.net.tw/m1.aspx?sNo=0001016&id=A12-00191" target="_blank"><h5 id="item-2-4">塭港堆燈塔</h5></a><div class="item0">
+                    <p>1914年首建，高度15公尺，裝用五等電石氣閃光燈，每2秒一閃，光力800燭光。
+                      1920年傾倒，隔年重建，塔形燈器與原塔同，後因沙洲移動再次流失。
+                      1957年另建20.7公尺高方形鋼架塔，初用五等電石氣燈，光力800燭光。
+                      後於1965年改裝直流電燈，光力增至2600燭光，每3秒一閃。1974年因沙洲移動，並為改善目標，移至附近新址，改建為方錐形鋼架塔，換用四等直流電燈，光力增至3500燭光。
+                      1977年改進設備，光力加強為10000燭光，塔高32.4公尺，燈高35.5公尺，公稱光程14.3浬。另設有多向金屬雷達反射器。
+                      自1914年首建以來，塭港堆燈塔因沙洲漂移、海水浸蝕等因素而多次傾斜倒塌，前後歷經七次重建，是全臺灣燈塔中，重建次數最多者</p>
+                    <img src="https://drive.google.com/uc?export=view&id=1qOklkt8YQ-l1o1Iq-gcWRyUlOvBX0EUf" alt="" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></div>
+
+
+
+                    <h4 id="item-3">南部的燈塔</h4>
+                    
+                    
+                    <a href="https://www.taiwan.net.tw/m1.aspx?sNo=0001016&id=A12-00190" target="_blank"><h5 id="item-3-1">國聖港燈塔</h5></a><div class="item0">
+                    <p>原名國姓，但因地政人員諧音登記錯誤而標示成國聖，致鄭成功最初登陸台灣的地點逐漸被淡忘。為維護曾文溪出海口附近海域航行船隻的安全，日治時期曾在頂額沙洲上建有曾文燈塔，二戰時期被盟軍炸毀。民國時期，由於嘉南地區沿海地帶漁民人口不斷增加，海關為了安全起見1957年選擇在國聖港網子寮的沙洲上興築燈塔，為一座高20.7公尺的方形木板條鋼構白色燈塔。國聖港燈塔最終逃不掉與塭港堆燈塔同樣建於沙洲上的命運，國聖港燈塔因海上沙洲的不定性，沙洲長期被海浪侵蝕流失，整座燈塔幾乎淪於汪洋中。1969年被衛歐拉颱風摧毀沒入海中。1970年6月海關決定另在附近的頂頭額汕建燈塔，沿用至今</p>
+                    <img src="https://drive.google.com/uc?export=view&id=1N9BymqqZgRhbdLcSBzu-RG5MbiYaD17G" alt="" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></div>
+                   
+                    <a href="https://www.taiwan.net.tw/m1.aspx?sNo=0001016&id=A12-00189" target="_blank"><h5 id="item-3-2">安平燈塔</h5></a><div class="item0">
+                    <p>前身為西元1872年設於紅毛城內之3丈高燈火炬，至西元1891年興建的安平燈塔為一方型鐵塔，西元1909年改建為白色圓形磚造之西式燈塔。原先是設在安平古堡上的白色圓形磚造燈塔，因安平港沙洲變遷、河道改變的影響，導致燈塔離海岸愈來愈遠，再加上沿海種植的防風林遮蔽了燈光，失去功能，遂於1960年3月起停止運轉。不過，海關於1965年重建安平燈塔為一座方形鐵塔，佇立於港外的沙灘上，繼續發揮導航的重要功能</p>
+                    <img src="https://drive.google.com/uc?export=view&id=1R9THByiSh0cDwy9Z-wfZRQSK-aehdFS-" alt="" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></div>
+                    
+                    <a href="https://www.taiwan.net.tw/m1.aspx?sNo=0001016&id=A12-00183" target="_blank"><h5 id="item-3-3">高雄燈塔</h5></a><div class="item0">
+                    <p>又稱旗後燈塔、旗津燈塔
+                      1864年打狗正式開港即有建造燈塔之議。而後船隻出入逐漸繁多，港口導航設施不足常發生船難事件，原有中國傳統式的燈竿或旗竿已不符時代需要。
+                      至1883年始聘英國技師築西式燈塔於旗後山上。據文獻所載，當時為磚造的方形塔，內裝六等單蕊定光燈，見距約十浬，所有的儀器設備均購自英國。
+                      日人擴建高雄港，為實際需要乃重修燈塔。1916年改建新塔，至1918年完成，新的燈塔在原址旁。塔前有一座西洋式白牆辦公室，草坪上尚有一座日晷儀。修建後的燈塔塔身為八角形，至頂部轉為圓筒狀，有陽臺可供遠眺。燈室外面裝玻璃，圓頂上有風向儀，風向儀上書寫有漢字，東、西、南、北，此種造形極為少見。塔身塗白色，頂部為黑色，高達十一公尺，遠望極為明顯。第二次世界大戰略受損害。
+                      燈塔戰後屢加整修，現在內部所用的導航設備，為新式四等旋轉透鏡電燈，光力強度為八十五萬支燭光。</p>
+                    <img src="https://drive.google.com/uc?export=view&id=1Bsw4CK6h0Mn6I2sVUI2aAKtPebPeFU5I" alt="" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></div>
+                    
+                    <a href="https://www.taiwan.net.tw/m1.aspx?sNo=0001016&id=A12-00182" target="_blank"><h5 id="item-3-4">琉球嶼燈塔</h5></a><div class="item0">
+                    <p>由高雄區漁會於1929年建立，原裝4等電石氣閃光燈，光力1,000支燭光，二次大戰時受損停止發光。
+                      1952年，高雄區漁會移請財政部關稅總局修復並管理，改裝5等電石氣閃光燈，每2秒一閃。
+                      1955年，改為8秒一閃白光，光力 860 支燭光。
+                      1980年，改裝交流電燈，光力 10,000 支燭光</p>
+                    <img src="https://drive.google.com/uc?export=view&id=1GvzzsmS56arK0AMpY1n3hyDIdPTAGTTs" alt="" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></div>
+                    
+                    <a href="https://www.taiwan.net.tw/m1.aspx?sNo=0001016&id=A12-00181" target="_blank"><h5 id="item-3-5">鵝鑾鼻燈塔</h5></a><div class="item0">
+                    <p>是一座位於臺灣屏東縣恆春鎮墾丁國家公園鵝鑾鼻的燈塔。該燈塔一度被認定為台灣最南端的標誌也是照射距離最遠的燈塔，後被台灣最南點地標取代。最初落成於1883年，並經多次重修，1962年中華民國政府再重修改建其燈具設施。</p>
+                    <img src="https://drive.google.com/uc?export=view&id=1opmFKWa-UcbIwjpzKC58FoQK1mbQhG__" alt="" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></div>
+                  
+
+                    <h4 id="item-4">東部的燈塔</h4>
+                    
+                    
+                    <a href="https://www.taiwan.net.tw/m1.aspx?sNo=0001016&id=A12-00203" target="_blank"><h5 id="item-4-1">蘇澳燈塔</h5></a><div class="item0">
+                    <p>位於宜蘭蘇澳港北方澳後山。
+                      建於民國十六年，塔身為白色方形混凝土塔，原裝四等電石氣閃光燈，每七秒閃白光二次，光力1000支燭光，設有紅色分弧，標示港口附近三仙臺等礁群。
+                      二次大戰時曾遭炸射損壞，停止發光。光復後民國三十八年修復，初裝六等電石氣閃光燈，每七秒一閃；民國四十二年改為電燈；民國五十三年換裝五等電燈，仍每秒閃光一次，光力白光15000支燭光，紅光2600支燭光。
+                      民國五十五年在北方澳前山山腰新建發電機室及宿舍等派人駐守。
+                      民國五十八年一月改用四等電燈，光力增強，光力白光21000支燭光，紅光3600支燭光。
+                      民國七十四年增設雷達標桿。塔高：7.9公尺燈高：56.1公尺〈高潮面至燈火中心〉公稱光程：白十六浬、紅十二浬</p>
+                    <img src="https://drive.google.com/uc?export=view&id=13u7elcmP-7vJRf66gB55bmUJz-Rqjh-Z" alt="" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></div>
+                    
+                    <a href="https://www.taiwan.net.tw/m1.aspx?sno=0001124&id=a12-00204" target="_blank"><h5 id="item-4-2">奇萊鼻燈塔</h5></a><div class="item0">
+                    <p>燈塔是為日本時代的產物，最早建於1931年，為白色方形混凝土建築，高7.6公尺，使用五等電石氣閃光燈，每三秒閃一次，光力300燭光。
+                      於1943年二戰期間受到盟軍飛機轟炸。遂於戰爭期間，乃至戰後至修復前仍無法發光作業。
+                      直到1963年，為了配合開放花蓮港為國際港，於是在原塔基附近新建一個白色五角形混凝土建築做為新塔。新建奇萊鼻燈塔使用四等電燈白色光，明三秒滅三秒，光力28,000燭光。
+                      並於1973年增設無線電標桿一座，輸出電力100瓦，射程100海浬，與綠島燈塔無線電標桿結合，以利船隻相互定位。
+                      1985年增設雷達標桿。
+                      1992年將通訊系統全面汰換為雙頻雷達標桿</p>
+                    <img src="https://drive.google.com/uc?export=view&id=12r9zDjybvBv2jWUOTHl5QqNXj95Nqkmq" alt="" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></div>
+                    
+                    <a href="https://www.taiwan.net.tw/m1.aspx?sno=0001124&id=a12-00205" target="_blank"><h5 id="item-4-3">花蓮港燈塔</h5></a><div class="item0">
+                    <p>建於臺灣日治時期，1909年臺南安平港的安平燈桿因改建為圓形磚造燈塔，而舊有燈桿的鐵材則在1910年移設至東部花蓮港，新設花蓮港燈塔，由臺灣總督府土木局負責施工，塔身為鐵造燈桿，外觀為白漆，照明來自塔頂石油燈，照度約100燭光，照度所及可達約8浬。
+                      10月26日完工開始點燈，燈塔移交給通信局營運管理，花蓮港燈塔坐落在今日花蓮市花崗山上，因使用二手材料興建，高度僅有10公尺，因此設置後燈塔高度及光度均不足，外海船隻不易發現花蓮港燈塔的照明。1913年12月24日石油燈更新為閃白光乙炔瓦斯燈，每2秒1閃光，照度提升至約350燭光，照度所及提升至約15浬。1921年10月22日調整明弧，1931年換裝綠色定光電燈。
+                      第二次世界大戰戰後國民政府來臺，海關奉准接收全臺各地燈塔與燈桿，花蓮港燈塔一併由海關接收，1960年改為白色連閃光。，1964年海關移撥已拆除的富貴角燈塔臨時燈塔之鐵材，移設花蓮港燈塔新建新塔身一座，塔高增加至28.4公尺，也讓花蓮港燈塔素有「拼裝燈塔」的稱呼。
+                      2013年1月1日配合行政院政府組職改造，關務署將助航業務移撥新成立的航港局，花蓮港燈塔移撥航港局繼續營運，2018年11月13日因應花蓮港燈塔年久老舊，航港局決議拆除重建，而新建燈塔仍舊維持舊有設計、燈器等，但採用全新鋼材搭建塔身，讓花蓮港燈塔擺脫拼裝燈塔的稱呼，重建期間夜間照明業務由北邊奇萊鼻燈塔暫代</p>
+                    <img src="https://drive.google.com/uc?export=view&id=1R2WluJRxmQfRqjnaMfERMCQrCkDU9Rd-" alt="" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></div>
+                    
+                    <a href="https://www.taiwan.net.tw/m1.aspx?sNo=0001016&id=A12-00379" target="_blank"><h5 id="item-4-4">綠島燈塔</h5></a><div class="item0">
+                    <p>是一座位處臺東縣綠島鄉的燈塔，興建於1939年，塔高33.3公尺，燈高48.2公尺，光程25.7浬。
+                      1937年12月7日晚上美國總統輪船公司所屬的遠洋定期船胡佛總統號，因天候不佳因於綠島公館村外海觸礁，美國居民感念島民奮勇救人義舉，特地於1939年向美國紅十字會捐款興建興建燈塔。
+                      第二次世界大戰期間，塔燈遭受盟軍炸毀，1948年時修復，如今已成島上漁民的導引明燈，
+                      綠島燈塔自2014年後改隸交通部航管局管理</p>
+                    <img src="https://drive.google.com/uc?export=view&id=16N7qzF1nEvmluhWKkH0-u4fH-LkkMqi5" alt="" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></div>
+                    
+                    <a href="https://www.taiwan.net.tw/m1.aspx?sno=0001123&id=a12-00208" target="_blank"><h5 id="item-4-5">蘭嶼燈塔</h5></a><div class="item0">
+                    <p>位處台東縣蘭嶼鄉椰油村。1982年，為增進花蓮港與高雄港間航運的安全，政府在蘭嶼西北側一丘陵的頂端設立蘭嶼燈塔，為該航段除綠島燈塔與鵝鑾鼻燈塔之外的第三座燈塔。此燈塔是台灣海拔最高的燈塔，為白色混凝土結構，目前不對遊客開放</p>
+                    <img src="https://drive.google.com/uc?export=view&id=1oFTOcYFwXG7o1Xrbnnh4t2vyeT047g33" alt="" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></div>  
+                    
                 
-                
-                <h4 id="item-5">離島的燈塔</h4>
-                <p>...</p>
-                <h5 id="item-5-1">目斗嶼燈塔</h5>
-                <p>...</p>
-                <h5 id="item-5-2">漁翁島燈塔</h5>
-                <p>...</p>
-                <h5 id="item-5-3">花嶼燈塔</h5>
-                <p>...</p>
-                <h5 id="item-5-4">東吉嶼燈塔</h5>
-                <p>...</p>
-                <h5 id="item-5-5">查母嶼燈塔</h5>
-                <p>...</p>
-                <h5 id="item-5-6">七美嶼燈塔</h5>
-                <p>...</p>
-                <h5 id="item-5-7">東引島燈塔</h5>
-                <p>...</p>
-                <h5 id="item-5-8">東莒島燈塔</h5>
-                <p>...</p>
-                <h5 id="item-5-9">烏坵嶼燈塔</h5>
-                <p>...</p>
-                <h5 id="item-5-10">東椗島燈塔</h5>
-                <p>...</p>
-                <h5 id="item-5-11">北椗島燈塔</h5>
-                <p>...</p>
-               </div>
-               <script src="nav.js"></script>
+                    <h4 id="item-5">離島的燈塔</h4>
+                    
+                    
+                    <a href="https://www.taiwan.net.tw/m1.aspx?sNo=0001016&id=A12-00188" target="_blank"><h5 id="item-5-1">目斗嶼燈塔</h5></a><div class="item0">
+                    <p>燈塔興建前，沉船海難事件不斷，依據《澎湖廳志》記載，有「鐵板關」之稱。
+                      日治初期，日本政府為提高航行此區域的船隻安全，後經提出澎湖列島燈臺建設意見後，根據臺灣總督府告示第七十號的內容表示，1899年（明治三十二年）興建目斗嶼燈塔，至1902年（明治三十五年）6月完工，最初該建築稱為「北島燈台」，由於交通不便導致島嶼上的施工相當艱鉅，最終該工程費用達20萬3仟日圓。
+                      目斗嶼燈塔高49公尺。塔高39.9公尺，結構因應避免因風浪長期侵襲造成銹蝕，均以鑄鐵製造，由於平時周圍海域四周多霧因素，故建築體的外漆以黑白相間的橫條紋表示，方便船隻注意。燈塔內部則為磚造承重牆結構，共分為三層，以旋轉樓梯相連，蓄水池也設於其中，以燈塔及宿舍屋頂的雨水為水源，燈塔完工後，派有駐守人員6人駐守於目斗嶼管理燈塔事務，並設有燈室、事務室、寢室、炊事室等設備，同時於吉貝島建有燈塔宿舍，方便提供駐守人員供輪班交替用與其家眷居住。平時使用澎湖郵便局的郵務艇有明丸(Ariake Maru)為燈塔運載物資必需品與往來馬公市之間。  
+                      第二次世界大戰期間，澎湖遭遇空襲，美軍使用B24轟炸機擊毀目斗嶼燈塔與相關設施，並襲擊有明丸，導致目斗嶼燈塔喪失運作功能。戰後，1947年目斗嶼燈塔進行改裝工程，將塔下房舍皆漆為白色，後於1964年改建塔頂，形成今貌。2001年，目斗嶼燈塔於中華民國各縣市所舉行的「歷史建築十景徵選活動」中，獲選為澎湖縣歷史建築十景之一。</p>
+                    <img src="https://drive.google.com/uc?export=view&id=1e9D80ZDftB-lMArmEqpy2I7hRlc-qh_1" alt="" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></div>
+                    
+                    <a href="https://www.taiwan.net.tw/m1.aspx?sNo=0001125&id=A12-00186" target="_blank"><h5 id="item-5-2">漁翁島燈塔</h5></a><div class="item0">
+                    <p>漁翁島燈塔（英語：Yuwengdao Lighthouse 或 Fisher Island Lighthouse 或 Xiyu Lighthouse 或 Pescadors Lighthouse，後者係關務司英國人循荷蘭人所稱），古稱西嶼塔燈，是一座位於臺灣澎湖縣西嶼鄉外垵村西南端吃仔尾的燈塔，為臺灣最古老燈塔之一，隸屬中華民國交通部航港局管轄。該燈塔下轄3座燈塔及燈杆，即查母嶼燈塔 、浮塭燈杆、海墘岩燈杆。該塔位置原為西嶼古塔之舊址，依「西嶼塔燈碑記」所載西嶼塔燈始於清乾隆43年〈1778年〉由台灣知府蔣元樞與澎湖通判謝維祺捐資，與船戶及廈門郊行共同捐募，就於西嶼外垵高地杙仔尾小廟原塔址重建浮屠形制七級石塔，每夜燃燈，光照海上，是為燈塔之始。</p>
+                    <img src="https://drive.google.com/uc?export=view&id=1mXYEKIFBKfnZ_ulFzFqTuYzykazo-s5u" alt="" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></div>
+                   
+                    <a href="https://www.taiwan.net.tw/m1.aspx?sno=0001125&id=a12-00187" target="_blank"><h5 id="item-5-3">花嶼燈塔</h5></a><div class="item0">
+                    <p>花嶼燈塔約1939年日人因軍事目的而興建，建於花嶼西半部最高點，後於同年9月12日正式啟用，第二次世界大戰期間，因受到空襲因素，花嶼燈塔由於缺乏電石氣供應而停止發光，也使得燈塔並未受到戰火所影響。戰後，燈塔曾設有管理員一名，負責管及維修工作，目前無人駐守，已改裝成太陽能發電且於遠處監控燈塔燈光。</p>
+                    <img src="https://drive.google.com/uc?export=view&id=1XPef2Dh_vQ5QmB6V3g4PHsDuIqtcpkI6" alt="" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></div>
+                    
+                    <a href="https://www.taiwan.net.tw/m1.aspx?sNo=0001016&id=A12-00184" target="_blank"><h5 id="item-5-4">東吉嶼燈塔</h5></a><div class="item0">
+                    <p>東吉嶼自古為台灣與澎湖群島間之海運貿易轉運站，島嶼周圍為澎湖水道海域 ，早期因受到暗礁影響，導致時常發生船難事件，1911年日人選定東吉嶼興建燈塔，希望可以改善當地海域航行安全。東吉嶼燈塔是日人在澎湖群島所興建的第二座燈塔，塔身最初為圓筒狀鐵塔。後於1911年8月13日正式啟用，不過周圍海域航道安全仍然不見改善。1930年代，為加強燈塔的守護功能，在1937年將原本的鐵造燈塔拆除，重新改建為鋼筋混凝土結構的圓塔，並改漆為黑白相間條紋，以加強船隻注意。新塔最後於1938年6月15日啟用。
+                    第二次世界大戰期間，因受到空襲因素影響停止發光，惟燈器並無重大損害，戰後隨即修復放光，並經過了歷次更換設備、翻修，繼續發光至今。2001年，東吉嶼燈塔於中華民國各縣市所舉行的「歷史建築十景徵選活動」中，獲選為澎湖縣歷史建築十景之一。</p>
+                    <img src="https://drive.google.com/uc?export=view&id=1ao5-fT0dn0XQd4Ac6VkJvsCJ2zb5d5Hu" alt="" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></div>
+                    
+                    <a href="https://www.taiwan.net.tw/m1.aspx?sNo=0001016&id=A12-00214" target="_blank"><h5 id="item-5-5">查母嶼燈塔</h5></a><div class="item0">
+                    <p>查母嶼島上設有燈塔避免附近船隻觸礁，因附近海域多暗流與距離查母嶼東南6浬之六尺礁為最危險之暗礁，清光緒年間曾有一艘運兵船於此處觸礁沉沒，船上士兵八百餘人當場溺死，該礁於低潮時露出，滿潮時沒入水中，故常有船隻在此觸礁沈沒。臺灣總督府於1912年著手計劃設燈，但因工程困難，費用十分浩大，乃改建於查母嶼上。1913年查母嶼燈塔竣工，塔身結構為磚造八角形，塔高13.4公尺，燈高24.7公 尺，外表漆成黑白相的直條紋。第二次世界大戰期間查母嶼燈塔曾遭盟軍轟炸機炸毀，臺灣光復後於1948年復光，裝設五等電石氣燈，每6秒閃白光一次，光力等於1200盞燭光，1958年修正光力為860盞燭光。查母嶼燈塔為自動發光燈塔，設有多向金屬雷達反射器，因無人看守，隸屬於漁翁島燈塔管轄。</p>
+                    <img src="https://drive.google.com/uc?export=view&id=10jEF2YT5BUEc5TqY7UOcnNtXtJai7mod" alt="" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></div>
+                    
+                    <a href="https://www.taiwan.net.tw/m1.aspx?sNo=0001016&id=A12-00185" target="_blank"><h5 id="item-5-6">七美嶼燈塔</h5></a><div class="item0">
+                    <p>七美嶼周圍海域為巴士海峽與渤海海峽暖流交會之處，為了航行指標考量，及令漁船能夠安全獲取此地龐大的漁業資源，根據昭和14年（西元1939年）總督府告示第285號表示，澎湖廳水產會於澎湖廳望安莊大嶼建設興建大嶼燈塔，建設費共為5,000圓，後在8月3日開始點燈，早年使用電石氣設備。
+                    戰後時期，七美嶼燈塔曾於1960年、1964年大修，並改為電燈發光。1989年交由海關整建後建造宿舍及倉庫，並派人員駐守。</p>
+                    <img src="https://drive.google.com/uc?export=view&id=10o6e0KJBVM8FoOf70da8GMArSdGSJVEA" alt="" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></div>
+                    
+                    <a href="https://www.taiwan.net.tw/m1.aspx?sNo=0001127&id=A12-00213" target="_blank"><h5 id="item-5-7">東引島燈塔</h5></a><div class="item0">
+                    <p>19世紀末，清廷在備受列強文化、政治、經濟的壓迫下，產生了特定商埠的構想。光緒24年吳淞首先開埠，三都澳次年接著開放通商帶動外商投入，航運業蓬勃發展，1901年4月24日凌晨，在格里諾克港（Greenock）註冊建造的英國雙鍋爐鋼鐵船蘇布倫號（SS Sobraon）航經東引島附近海域時，因觸礁沉沒，英方緊急動員上海另一商船和一艘法國軍艦救援，雖全船乘客和船員安然無恙，但總體損失慘重，促成東湧燈塔的興建。
+                    東湧燈塔完工於光緒30年（1904年），同年5月18日落成啟用。是由海關總稅務司赫德於晚年所監造的燈塔之一，由總營造司哈爾定（John Reginald Harding）負責建造，同時也是中國沿海第一座採用白熾紗罩燈頭的燈塔，整體結構由紅磚砌造，共以塔身、塔燈及塔頂三部分組成。 民國55年（1966年）9月因艾麗絲颱風過境，燈塔嚴重損壞，透明玻璃罩及折光鏡機中央透鏡損毀，無法繼續發光，後因軍事需要而停燈，直到民國77年（1988年）燈塔增設霧號兩組，隔年6月復燈河展開房舍及環境重新整修工程，而成今日外觀。</p>
+                    <img src="https://drive.google.com/uc?export=view&id=1odZuq1-HnAM_wdNqyH9nUBAmlItFRUJj" alt="" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></div>
+                    
+                    <a href="https://www.taiwan.net.tw/m1.aspx?sNo=0001016&id=A12-00212" target="_blank"><h5 id="item-5-8">東莒島燈塔</h5></a><div class="item0">
+                    <p>東犬即光緒時東莒島的舊稱，由於東犬島正當航道關隘，加以山勢高聳，是以兼具設燈塔的環境與必要性。清朝道光二十二年（西元1842年），清廷鴉片戰爭戰敗，與英國簽訂「南京條約」開放五口通商後，東南沿海商港洋船匯集，但因為沿海港澳曲折，礁石密佈，亟需新式的助航設施，以便於辨別福州方位。
+                    其後根據咸豐八年（1858年）英法聯軍戰敗之後的「天津條約」與「中英通商章程善後條約」中有關於助航設施建設的規定，更確定了東南沿岸日後建設新式的助航設施。然而當時由於太平天國未平，捻亂又起，且外患頻仍，因而延至同治二年（1863年）羅伯特·赫德受命成為海關總稅務司後，方於同治八年（1869年）至九年（1870年）間開始了首批新式燈塔的建造。
+                    同治十年（1871年）至十一年（1872年）在臺灣海峽與東南沿海繼續興建第二批的新式燈塔，而東犬燈塔即為此時期的產物。同治11年（1872年）開始興建，同治13年（1875年）落成。東莒島燈塔於1988年（民國77年）被內政部評定為台閩地區第二級古蹟。</p>
+                    <img src="https://drive.google.com/uc?export=view&id=1JaOhzML-Kes15N50O1ezohwZDI1DNqrH" alt="" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></div>
+                    
+                    <a href="https://cabkc.kinmen.gov.tw/asset?uid=75&pid=1" target="_blank"><h5 id="item-5-9">烏坵嶼燈塔</h5></a><div class="item0">
+                    <p>烏坵燈塔前於民國95年6月13日經金門縣政府指定為縣定古蹟，文化部後於107年2月12日公告指定為國定古蹟。其為清代臺灣海峽近代化燈塔的代表，係中華民國臺灣地區福建沿海四座十九世紀燈塔之一，其屬已指定之古蹟中較具重要、保存完整並為清代臺灣海峽近代化燈塔之典範。</p>
+                    <img src="https://drive.google.com/uc?export=view&id=1eoziN3vYjSLuWZyD56NBqd20dLV0rBwM" alt="" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></div>
+                    
+                    <a href="https://www.taiwan.net.tw/m1.aspx?sNo=0001126&id=A12-00209" target="_blank"><h5 id="item-5-10">東椗島燈塔</h5></a><div class="item0">
+                    <p>鴉片戰爭後，中國東南沿海門戶洞開，列強船隻往返頻繁，由外國人「幫辦稅務」的中國海關為維護船舶航行安全逐一興建燈塔與樁桿。中英雙方簽訂天津條約後，海關聘請英國籍燈塔工程師韓德善在東碇島上規劃建造燈塔。1871年海關派遣畢斯比（A. M. Bisbee）前往島上監工建造。燈塔興建完成後為海務部門成立後在廈門灣興建的第一座西式燈塔，為閩台地區罕見的黑色燈塔。啟用發光後曾先後於1913年和1927年整修。第二次整修時裝設一等石油燈。1949年起因國共內戰台海砲火頻繁，於1953年5月3日停止發光。八二三炮戰時燈塔遭砲火轟擊，戰火使燈器外緣的玻璃帷幕完全毀損，頂端鐵罩也遭砲彈碎片穿透而充滿彈痕。1963年燈塔改用五等電燈，但因國防因素直到1971年才又恢復發光。東碇島燈塔停用近二十年後啟用，頂罩上的風向儀和方向標又在1999年10月遭丹恩颱風波及毀損，至今仍未修復。</p>
+                    <img src="https://drive.google.com/uc?export=view&id=1bL-cFrqMeWYw7fUqD7-uWX9cLefeejbK" alt="" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></div>
+                    
+                    <a href="https://www.taiwan.net.tw/m1.aspx?sNo=0001016&id=A12-00210" target="_blank"><h5 id="item-5-11">北椗島燈塔</h5></a><div class="item0">
+                    <p>北碇島上有由英國籍工程師韓得善（David Marr Henderson）設計興建，自1875年（光緒元年）起提出興建計畫，4年後向歐洲製造商訂購燈器，1882年（光緒8年）動工，隔年10月18日（光緒9年9月18日）點燈，在歷史上北碇島燈塔則以不同別稱出現於多項英文文獻中，足見其為國際航運之要角。
+                    北碇島燈塔及其附屬設施包括辦公室、宿舍、花崗石儲水池、旗杆等設施，原應設有霧砲，但已遭移除，各項建築興建於該島南端高峰之上，基地呈不規則形，其範圍幾乎佔滿全島。
+                    北碇島燈塔為圓形磚造，外牆塗白漆，塔身中央設有3條花崗石嵌框，以加強結構安全，並以白色花崗石為塔身貼面，是唯一使用花崗石嵌框的燈塔，塔高17.5公尺，燈高36.3公尺。初建燈器採用頭等鏡機六蕊燈頭之煤油燈，1913年換置英國張氏兄弟公司（Chance Brothers and Co. Ltd.）製造之煤油蒸汽燈，搭配85公厘白熾紗罩，為英國張氏兄弟公司生產之最佳專利品，其後經歷3度設備更新，戰後改換新式燈器（即現今使用之電燈），公稱光程達11.3浬。
+                    北碇島燈塔於第二次世界大戰期間塔身及塔頂燈器室曾遭盟軍轟炸機炸毀，後僅能以簡易三角鐵架安置燈具，維持燈塔運作，炸落之頂蓋改建為紀念座並設立於基地中。
+                    北碇島燈塔於1920至1930年代曾被選為外籍燈塔管理員訓練之所，後因燈塔守之職位逐漸由華人遞補，該訓練計畫因此終止。
+                    1949年第二次國共內戰後北碇島開始由國軍進入駐紮，陸軍於島上興建防禦設施及地下坑道，因距離中國大陸較遠，未受後續戰役影響，維持正常燈塔運作功能，塔身設有3組「三民主義統一中國」浮雕泥塑標語，呈現軍事管制時期之特殊風貌。
+                    財政部關務署曾於1986年整修塔身，即為現今可見之樣貌，2013年由財政部關務署移撥交通部航港局負責管理，北碇島燈塔與東碇島燈塔合稱為「金門雙碇」。</p>
+                    <img src="https://drive.google.com/uc?export=view&id=1VkrlcAfoS8xhDfEz2x-uOkT6Kipx-4wT" alt="" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <script>
+            AOS.init();
+          </script>
         </main>
         <footer>
             <div class="information">
